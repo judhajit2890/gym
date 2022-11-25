@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuff Gym</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.green.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!------------------header start---------------------------------->
+    <section class="header" id="header">
+        <nav >
+            <a href="#header" class="logo"><img class="logo" src="./img/logo.png" alt=""></a>
+            <ul id="navigation">
+                <li><a href="#header"class="active">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#classes">Individual class</a></li>
+                        <li><a href="#classes">Group class</a></li>
+                    </ul>
+                </li>
+                <li><a href="#expert">Expert</a></li>
+                <li><a href="#price">Pricing</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Schedule<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#schedule">Individual</a></li>
+                        <li><a href="#schedule">Group</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Review</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <!----------------login popup----------------->
+                <button class="nb"onclick="openPopup()">Login</button>
+                <div class="popup" id="popup">
+                    <span class="fa-solid fa-user"></span>
+                    <input type="email" placeholder="Your Email Id">
+                    <input type="password" placeholder="Password">
+                    <p>Create an account? Click<a href="#">Sign up</a></p>
+                    <button class=" btn more" type="submit" onclick="closePopup()">Login</button>
+                </div>
+
+                <!----------------sign up popup----------------->
+                <button class="nb"onclick="openPopup2()">Sign Up</button>
+                <div class="popup2" id="popup2">
+                    <span class="fa-solid fa-user"></span>
+                    <input type="name" placeholder="Your name">
+                    <input type="email" placeholder="Your Email Id">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="confirm password">
+                    <button class="btn more" type="submit" onclick="closePopup2()">Sign Up</button>
+                </div>
+            </ul>
+            <button class="fa-solid fa-bars menubar"></button>
+
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-lg-8 col-sm-6 col-xs-12 text" >
+                    <img class="v1" src="./img/vector1.png"alt="">
+                    <img class="v2"src="./img/vector2.png"alt="">
+                    <div class="text-box">
+                        <h1>Welcome to Tuff</h1>
+                        <h1>Health Fitness Club</h1>
+                        <p>Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                        sit amet pretium magna vulputate nec. 
+                        consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                        sit amet pretium magna vulputate nec.</p>
+                        <button class="btn more mb">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12 image" >
+                   <img src="./img/object/2.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+<!------------------header end---------------------------------->
+
+
+<!------------------info start---------------------------------->
+<section class="info">
+    <div class="container info-line">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-12 box">
+                <img class="one"src="./img/icons/icon3.png" alt="">
+                <h1>Experience Trainers</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                    Duis eleifend sed lectus id tincidunt. Suspendisse euismod semper lacus, 
+                    in euismod diam iaculis a. Nam at vulputate mauris. Morbi dapibus, lectus et scelerisque porttitor, 
+                    leo erat luctus lacus, quis ornare justo nulla id elit. </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 box">
+                <img src="./img/icons/icon2.png" alt="">
+                <h1>Tons of Equipment</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                    Duis eleifend sed lectus id tincidunt. Suspendisse euismod semper lacus, 
+                    in euismod diam iaculis a. Nam at vulputate mauris. Morbi dapibus, lectus et scelerisque porttitor, 
+                    leo erat luctus lacus, quis ornare justo nulla id elit. </p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 box">
+                <img src="./img/icons/icon1.png" alt="">
+                <h1>Fitness Excercise</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                    Duis eleifend sed lectus id tincidunt. Suspendisse euismod semper lacus, 
+                    in euismod diam iaculis a. Nam at vulputate mauris. Morbi dapibus, lectus et scelerisque porttitor, 
+                    leo erat luctus lacus, quis ornare justo nulla id elit. </p>
+            </div>
+        </div>
+    </div>
+    <img class="sd"src="./img/shape divider.png" alt="">
+</section>
+<!------------------info end---------------------------------->
+
+
+<!------------------about start---------------------------------->
+<section class="about" id="about">
+    
+    <div class="container">
+        <div class="col-lg-5 col-sm-12 col-xs-12 image">
+            <img src="./img/object/5.png" alt="">
+        </div>
+        <div class="col-lg-7 col-sm-12 col-sm-xs about-text">
+            <h4>About Us</h4>
+            <h1>We Use Experience To Achieve</h1>
+            <h1>The Physique You Deserve</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                Duis eleifend sed lectus id tincidunt. Suspendisse euismod semper lacus, 
+                in euismod diam iaculis a. Nam at vulputate mauris. Morbi dapibus, lectus et scelerisque porttitor, 
+                leo erat luctus lacus, quis ornare justo nulla id elit.</p>
+            <h5><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>    
+            <h5><i class="fa-solid fa-check"></i>Suspendisse euismod semper lacus.</h5>    
+            <h5><i class="fa-solid fa-check"></i>Nam at vulputate mauris.</h5>    
+            <h5><i class="fa-solid fa-check"></i>Phasellus ac volutpat orci.</h5>    
+            <h5><i class="fa-solid fa-check"></i>Duis eleifend sed lectus id tincidunt.</h5>    
+            <h5><i class="fa-solid fa-check"></i>Nam at vulputate mauris. Morbi dapibus, lectus et scelerisque porttitor.</h5> 
+            <button class="btn more">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+    </div>
+
+</section>
+
+<!------------------about end---------------------------------->
+
+
+
+<!------------------class start---------------------------------->
+<section class="classes" id="classes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 text">
+                <h4>Classes we Proved</h4>
+                <h1>We Offer Exclusive Training Session</h1>
+                <h1>To Build Health With Professionals</h1>
+            </div>
+            <div class="col-lg-12 ol-sm-12 col-xs-12">
+                <div class="image">
+                    <div class="one owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="textbox t1">
+                                <h3>Fitness Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                            <div class="imagebox">
+                                <img src="./img/classes/c4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="imagebox m1">
+                                <img src="./img/classes/c1.jpg" alt="">
+                            </div>
+                            <div class="textbox">
+                                <h3>Yoga Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="textbox t1">
+                                <h3>Aerobics Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                            <div class="imagebox">
+                                <img src="./img/classes/c2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="imagebox m1">
+                                <img src="./img/classes/c6.jpg" alt="">
+                            </div>
+                            <div class="textbox">
+                                <h3>Strategic Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="textbox t1">
+                                <h3>Cardio Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                            <div class="imagebox">
+                                <img src="./img/classes/c8.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="imagebox m1">
+                                <img src="./img/classes/c7.jpg" alt="">
+                            </div>
+                            <div class="textbox">
+                                <h3>Cardio & Strategic Traning</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac volutpat orci. 
+                                    Duis eleifend sed lectus id tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!------------------class end---------------------------------->
+
+
+
+
+<!------------------expert start---------------------------------->
+<section class="expert" id="expert">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 textdetailes">
+                <h4>Expert Trainer</h4>
+                <h1>Meet Our Coaches</h1>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-xs-12 teamimage">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox ">
+                        <img src="./img/team/team5.jpg" alt="">
+                        <div class="name">
+                            <h4>Elizabeth Scarlett</h4>
+                            <p>Cardio Trainer</p>
+                        </div>
+                        <div class="social">
+                           <i class="fa-brands fa-facebook"></i>
+                           <i class="fa-brands fa-twitter"></i>
+                           <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox">
+                        <img src="./img/team/team4.jpg" alt="">
+                        <div class="name">
+                            <h4>Scarlett Gabriel</h4>
+                            <p>Yoga Trainer</p>
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox">
+                        <img src="./img/team/team6.jpg" alt="">
+                        <div class="name">
+                            <h4>Arch swon</h4>
+                            <p>Bodybuilding Trainer</p>
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox">
+                        <img src="./img/team/team1.jpg" alt="">
+                        <div class="name">
+                            <h4>Swon Dev</h4>
+                            <p>Boxing Trainer</p>
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox">
+                        <img src="./img/team/team2.jpg" alt="">
+                        <div class="name">
+                            <h4>Anny jhons</h4>
+                            <p>Fitness Trainer</p>
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12 ibox">
+                        <img src="./img/team/team3.jpg" alt="">
+                        <div class="name">
+                            <h4>Devid brode</h4>
+                            <p>Cardio Trainer</p>
+                        </div>
+                        <div class="social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</section>
+<!------------------expert end---------------------------------->
+
+
+<!------------------price start---------------------------------->
+<section class="price" id="price">
+    <div class="container">
+        <h4>Our Price</h4>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12 pbox">
+               <div class="pricebox">
+                    <h2>Standerd Plan</h2>
+                    <h1><i class="fa-sharp fa-solid fa-dollar-sign"></i>150</h1>
+                    <p>5 Days in a Week </p>
+                    <p>1 Sweatshirt</p>
+                    <p>1 Bottle of Protein</p>
+                    <p><del>Access to Videos</del></p>
+                    <p><del>Weight Lifting</del></p>
+                    <p><del>Musele Stretching</del></p>
+                    <button class="btn more pricebutton">Join Now<i class="fa-solid fa-arrow-right"></i></button>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 pbox">
+                <div class="pricebox">
+                    <h2>Personal Plan</h2>
+                    <h1><i class="fa-sharp fa-solid fa-dollar-sign"></i>350</h1>
+                    <p>5 Days in a Week </p>
+                    <p>1 Sweatshirt</p>
+                    <p>1 Bottle of Protein</p>
+                    <p>Access to Videos</p>
+                    <p><del>Weight Lifting</del></p>
+                    <p><del>Musele Stretching</del></p>
+                    <button class="btn more pricebutton">Join Now<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 pbox">
+                <div class="pricebox">
+                    <h2>Premium Plan</h2>
+                    <h1><i class="fa-sharp fa-solid fa-dollar-sign"></i>450</h1>
+                    <p>5 Days in a Week </p>
+                    <p>1 Sweatshirt</p>
+                    <p>1 Bottle of Protein</p>
+                    <p>Access to Videos</p>
+                    <p>Weight Lifting</p>
+                    <p><del>Musele Stretching</del></p>
+                    <button class="btn more pricebutton">Join Now<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 pbox">
+                <div class="pricebox">
+                    <h2>VIP Plan</h2>
+                    <h1><i class="fa-sharp fa-solid fa-dollar-sign"></i>550</h1>
+                    <p>5 Days in a Week </p>
+                    <p>1 Sweatshirt</p>
+                    <p>1 Bottle of Protein</p>
+                    <p>Access to Videos</p>
+                    <p>Weight Lifting</p>
+                    <p>Musele Stretching</p>
+                    <button class="btn more pricebutton">Join Now<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!------------------price end---------------------------------->
+
+
+<!------------------schedule start---------------------------------->
+<section class="schedule" id="schedule">
+    
+    <div class="container">
+        <h4>Schedule</h4>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 tableitem">
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td><h3>Yoga</h3>
+                            <hr>
+                            <p>6am-7am</p>
+                        </td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                        <td><h3>Yoga</h3><hr>
+                            <p>6am-7am</p></td>
+                    </tr>
+                    <tr>
+                        <td class="mon"></td>
+                        <td><h3>Aerobics</h3><hr>
+                            <p>8am-9am</p></td>
+                        <td class="wed"></td>
+                        <td><h3>Freehand</h3><hr>
+                            <p>7am-8am</p></td>
+                        <td><h3>Power Lifting</h3><hr>
+                            <p>7am-8am</p></td>
+                        <td><h3>Aerobics</h3><hr>
+                            <p>7am-8am</p></td>
+                        <td><h3>Power Lifting</h3><hr>
+                            <p>7am-8am</p></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Cardio</h3><hr>
+                            <p>9am-10am</p>
+                        </td>
+                        <td class="tues"></td>
+                        <td><h3>Power Lifting</h3><hr>
+                            <p>9am-10am</p></td>
+                        <td><h3>Cardio</h3><hr>
+                            <p>8am-9am</p></td>
+                        <td class="fri"></td>
+                        <td><h3>Freehand</h3><hr>
+                            <p>9am-10am</p></td>
+                        <td><h3>Aerobics</h3><hr>
+                            <p>9am-10am</p></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Freehand</h3><hr>
+                            <p>10am-11am</p>
+                        </td>
+                        <td><h3>Power Lifting</h3><hr>
+                            <p>10am-11am</p></td>
+                        <td><h3>Freehand</h3><hr>
+                            <p>10am-11am</p></td>
+                        <td class="thrus"></td>
+                        <td><h3>Cardio</h3><hr>
+                            <p>10am-11am</p></td>
+                        <td><h3>Body Massage</h3><hr>
+                            <p>10am-11am</p></td>
+                        <td class="sun"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!------------------schedule end---------------------------------->
+
+
+<!------------------blog start---------------------------------->
+<section class="blog" id="blog">
+    <div class="container">
+        <h4>Reviews</h4>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 slide">
+                <div class="two owl-carousel owl-theme">
+                    <div class="item re">
+                        <img src="./img/banner/1.jpg" alt="">
+                         <div class="rebox">
+                            <h5>Elizabeth</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                         </div>
+                        
+                    </div>
+                    <div class="item re">
+                        <img src="./img/banner/2.jpg" alt="">
+                        <div class="rebox">
+                            <h5>Devid</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                        </div>
+                    </div>
+                    <div class="item re">
+                        <img src="./img/banner/3.jpg" alt="">
+                        <div class="rebox">
+                            <h5>Victor</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                        </div>
+                    </div>
+                    <div class="item re">
+                        <img src="./img/banner/4.jpg" alt="">
+                        <div class="rebox">
+                            <h5>Jhone</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                        </div>
+                    </div>
+                    <div class="item re">
+                        <img src="./img/banner/5.jpg" alt="">
+                        <div class="rebox">
+                            <h5>Anna</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                        </div>
+                    </div>
+                    <div class="item re">
+                        <img src="./img/banner/6.jpg" alt="">
+                        <div class="rebox">
+                            <h5>Swon</h5>
+                            <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec. 
+                            consectetur adipiscing elit. Integer aliquam turpis nulla, 
+                            sit amet pretium magna vulputate nec.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!------------------blog end---------------------------------->
+
+
+
+<!------------------contact start---------------------------------->
+<section class="contact" id="contact">
+    <div class="container">
+        <h4>Contact us</h4>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="formbox">
+                    <h2>Sign in for 10 day free</h2>
+                    <h3>Workout</h3>
+                    <form action="#" onsubmit="return validation();">
+
+                        <input type="name" placeholder="Name" id="user">
+                        <span id="uname"></span>
+                        <input type="email" placeholder="email" id="email">
+                        <span id="mail"></span>
+                        <input class="btn more smb" type="Submit">
+                    </form>
+                </div>
+                
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12 ">
+                <div class="imagebox">
+                    <img src="./img/object/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="footertext">
+                    <h2><a href="#classes">Classes</a></h2>
+                    <h2><a href="#expert">Expert</a></h2>
+                    <h2><a href="#blog">Review</a></h2>
+                    <h2><a href="#contact">Contact us</a></h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="footersocial">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copy">&copy 2022. Pictograph-HTML CSS Tourist Template</p>
+</section>
+<!------------------contact end---------------------------------->
+
+
+
+
+
+
+
+
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+
+</body>
+</html>
