@@ -275,7 +275,7 @@ nav ul li a:hover, .active{
 }
 /*=======login popup end===============*/
 .logo{
-    width: 20%; 
+    width: 50px; 
     /* position: relative;
     top: -10px;   */
     cursor: pointer;
@@ -797,6 +797,23 @@ nav ul li a:hover, .active{
     overflow-y:auto ;
 } */
 
+.schedule .tableitem{
+    /* background-color: blue; */
+    overflow-y:auto ;
+}
+.schedule .tableitem::-webkit-scrollbar{
+    height: 3px;
+}
+.schedule .tableitem::-webkit-scrollbar-track{
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: inset 0 0 3px rgba(92, 107, 107, 0.4);
+}
+.schedule .tableitem::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #078ca9;
+}
+
 /*---------- table start-----------*/
 table th{
     background-color: #f40028;
@@ -1056,20 +1073,21 @@ input:-webkit-autofill:focus{
     }
 
     
-    ul{
+    nav ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         position: absolute;
-        top: 70px;
+        top: 44px;
         left: 0;
-        padding:0 5px;
+        padding:5px 5px;
         background: #535353b0;
         display: none;
     }
     nav ul li{
         padding-right:5px;
+        margin-left: .5rem;
         list-style: none;
         cursor: pointer;
     }
@@ -1106,21 +1124,21 @@ input:-webkit-autofill:focus{
     }
     /*=======login popup===============*/
     .open-popup{
-        top:700%;
-        left: 50%;  
+        top:150%;
+        left: 50%;   
     }
 
     /*=======login popup end===============*/
 
     /*=======signup popup===============*/
     .open-popup2{
-        top:700%;
+        top:110%;
         left: 50%;
     }
 
     /*=======login popup end===============*/
     .logo{
-        width: 35%; 
+        width: 50px; 
         cursor: pointer;
         z-index: 1;
        
@@ -1390,16 +1408,16 @@ input:-webkit-autofill:focus{
         background-size: cover;
 
     }
-    ul{
+    nav ul{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
         width: 40%;
         position: absolute;
-        top: 38px;
+        top: 45px;
         left: 0;
-        padding:0 5px;
+        padding:5px 10px;
         background: #535353da;
         display: none;
     }
@@ -1483,7 +1501,7 @@ input:-webkit-autofill:focus{
     }
     /*=======login popup end===============*/
     .logo{
-        width: 35%;  
+        width: 50px;  
         cursor: pointer;
         z-index: 1;
     }
